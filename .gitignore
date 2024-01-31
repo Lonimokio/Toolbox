@@ -1,0 +1,26 @@
+# Ignore debug and build files
+/bin/
+/obj/
+
+# Ignore Visual Studio files
+.vs/
+*.suo
+*.user
+*.userprefs
+*.psess
+*.vsp
+*.vspx
+*.sln.docstates
+
+# Ignore NuGet packages
+/packages/
+
+# Ignore build output
+/Build/
+
+# Ignore unnecessary WPF files
+*.vshost.*
+*.xaml.*
+*.xaml.cs
+*.xaml.g.cs
+*.xaml.g.i.cs
