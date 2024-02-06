@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\App.xaml
-11407045341
+9207444033
 
-61828731170
+14-736641853
 198-294894759
-MainWindow.xaml;
+cheatSheets\mdSheet.xaml;cheatSheets\WindowsSheet.xaml;MainWindow.xaml;pages\Calculator.xaml;pages\ConversionTools.xaml;pages\PingTester.xaml;userControls\CheatsheetsNav.xaml;userControls\MathToolsNav.xaml;userControls\NetworkToolsNav.xaml;
 
-False
+True
 

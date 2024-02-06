@@ -2,11 +2,22 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Toolbox"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:Toolbox="clr-namespace:Toolbox.userControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Toolbox" Height="450" Width="800">
+
     <Grid>
+        <TabControl x:Name="tabControl" Grid.Row="0" VerticalAlignment="Top">
+            <TabItem Height="50" Width="100" Header="Math tools">
+                <Toolbox:MathToolsNav x:Name="MathToolsNav"/>
+            </TabItem>
+            <TabItem Height="50" Width="100" Header="Network tools">
+                <Toolbox:NetworkToolsNav x:Name="NetworkToolsNav"/>
+            </TabItem>
+            <TabItem Height="50" Width="100" Header="Cheatsheets">
+                <Toolbox:CheatsheetsNav x:Name="CheatsheetsNav"/>
+            </TabItem>
+        </TabControl>
 
     </Grid>
 </Window>
