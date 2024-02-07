@@ -19,7 +19,6 @@ C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\Toolbox.genruntimeconfig.cache
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\ref\Toolbox.dll
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\Toolbox_MarkupCompile.lref
-C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\Calculator.g.cs
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\ConversionTools.g.cs
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\Calculator.baml
@@ -30,3 +29,7 @@ C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\cheatSheets\WindowsSheet.g.cs
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\cheatSheets\mdSheet.baml
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\cheatSheets\WindowsSheet.baml
+C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\bin\Debug\net8.0-windows\NCalc.dll
+C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\Toolbox.csproj.AssemblyReference.cache
+C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\Toolbox.csproj.CopyComplete
+C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\bin\Debug\net8.0-windows\Mages.Core.dll
