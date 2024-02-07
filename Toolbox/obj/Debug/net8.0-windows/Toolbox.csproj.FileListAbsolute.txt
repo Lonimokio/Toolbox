@@ -22,17 +22,11 @@ C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\Calculator.g.cs
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\ConversionTools.g.cs
-C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\userControls\MathToolsNav.g.cs
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\Calculator.baml
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\ConversionTools.baml
-C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\userControls\MathToolsNav.baml
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\PingTester.g.cs
-C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\userControls\NetworkToolsNav.g.cs
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\PingTester.baml
-C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\userControls\NetworkToolsNav.baml
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\cheatSheets\mdSheet.g.cs
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\cheatSheets\WindowsSheet.g.cs
-C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\userControls\CheatsheetsNav.g.cs
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\cheatSheets\mdSheet.baml
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\cheatSheets\WindowsSheet.baml
-C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\userControls\CheatsheetsNav.baml
