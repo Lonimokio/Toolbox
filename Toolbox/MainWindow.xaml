@@ -14,7 +14,7 @@
         <TabControl ItemsSource="{Binding MainNavBarTabs}" SelectionChanged="MainNavBarTabs_SelectionChanged">
             <TabControl.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Height="25" Width="120" TextAlignment="Center" Text="{Binding Name}"/>
+                    <TextBlock Height="150" Width="150" TextAlignment="Center" Text="{Binding Name}"/>
                 </DataTemplate>
             </TabControl.ItemTemplate>
         </TabControl>

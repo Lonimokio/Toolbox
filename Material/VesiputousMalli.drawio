@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" modified="2024-02-07T14:29:34.586Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="IAUNJlRTkVpvAmN2Xzti" version="23.1.1" type="device">
+  <diagram name="Sivu-1" id="DKXjx1UXoa4Yn7-UicZO">
+    <mxGraphModel dx="1194" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5eAiPCL7nS2B-TLZi2Tz-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5eAiPCL7nS2B-TLZi2Tz-1" target="5eAiPCL7nS2B-TLZi2Tz-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5eAiPCL7nS2B-TLZi2Tz-1" value="Analysoin ohjelman tarpeet&amp;nbsp;&lt;br&gt;-Modulaarinen&lt;br&gt;-Tehokas&lt;br&gt;.-Ominaisuus rikas" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="160" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5eAiPCL7nS2B-TLZi2Tz-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="5eAiPCL7nS2B-TLZi2Tz-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="321" as="targetPoint" />
+            <mxPoint x="370" y="276" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="430" y="276" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5eAiPCL7nS2B-TLZi2Tz-2" value="Aloitin tarkemman suunitelman ohjelmiin tekemällä muita materiaaleja." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="240" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5eAiPCL7nS2B-TLZi2Tz-4" value="Aloitin ohjelman implementaation&amp;nbsp;&lt;br&gt;Navigaatio -&amp;gt; Matikka työkalut -&amp;gt; Netti työkalut -&amp;gt; Lunttilaput -&amp;gt; Asetukset -&amp;gt; Viimeistely" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="350" width="210" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="5eAiPCL7nS2B-TLZi2Tz-7" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Tarpeet&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="110" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5eAiPCL7nS2B-TLZi2Tz-9" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Suunnitelu&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="160" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5eAiPCL7nS2B-TLZi2Tz-10" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;Toteutus&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="240" width="100" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
