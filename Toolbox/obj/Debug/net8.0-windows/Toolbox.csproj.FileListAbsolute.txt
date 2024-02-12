@@ -4,7 +4,6 @@ C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\bin\Debug\net8.0-windows
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\bin\Debug\net8.0-windows\Toolbox.dll
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\bin\Debug\net8.0-windows\Toolbox.pdb
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\bin\Debug\net8.0-windows\Mages.Core.dll
-C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\bin\Debug\net8.0-windows\NCalc.dll
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\Toolbox.csproj.AssemblyReference.cache
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\Calculator.baml
@@ -33,3 +32,8 @@ C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\Toolbox.pdb
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\Toolbox.genruntimeconfig.cache
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\ref\Toolbox.dll
+C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\bin\Debug\net8.0-windows\LiveCharts.dll
+C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\bin\Debug\net8.0-windows\LiveCharts.Wpf.dll
+C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\bin\Debug\net8.0-windows\Markdown.dll
+C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\CheatSheets.g.cs
+C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\CheatSheets.baml
