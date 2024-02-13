@@ -5,32 +5,55 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         Title="Toolbox" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="TextBlock" x:Key="TabItemTextBlockStyle">
+            <Setter Property="Height" Value="150"/>
+            <Setter Property="Width" Value="auto"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <!--MainNavBar elements-->
-        <TabControl ItemsSource="{Binding MainNavBarTabs}" SelectionChanged="MainNavBarTabs_SelectionChanged">
-            <TabControl.ItemTemplate>
-                <DataTemplate>
-                    <TextBlock Height="150" Width="150" TextAlignment="Center" Text="{Binding Name}"/>
-                </DataTemplate>
-            </TabControl.ItemTemplate>
-        </TabControl>
-
+        <!--MainNavBar and ExtraNavBar elements-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TabControl ItemsSource="{Binding MainNavBarTabs}" SelectionChanged="MainNavBarTabs_SelectionChanged">
+                <TabControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}" Style="{StaticResource TabItemTextBlockStyle}"/>
+                    </DataTemplate>
+                </TabControl.ItemTemplate>
+                <TabControl.ContentTemplate>
+                    <DataTemplate>
+                        <ContentControl Content="{Binding Content}"/>
+                    </DataTemplate>
+                </TabControl.ContentTemplate>
+            </TabControl>
+            
+            <!--Extranavbar-->
+            <TabControl x:Name="ExtraNavBar" Grid.Column="1" ItemsSource="{Binding ExtraNavBarTabs}" SelectionChanged="NavBar_SelectionChanged">
+                <TabControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}"/>
+                    </DataTemplate>
+                </TabControl.ItemTemplate>
+            </TabControl>
+        </Grid>
         <!--SubNavBar elements-->
-        <TabControl ItemsSource="{Binding SubNavBarTabs}" Grid.Row="1">
+        <TabControl x:Name="SubNavBar" ItemsSource="{Binding SubNavBarTabs}" Grid.Row="1" SelectionChanged="NavBar_SelectionChanged">
             <TabControl.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding Name}"/>
                 </DataTemplate>
             </TabControl.ItemTemplate>
-            <TabControl.ContentTemplate>
-                <DataTemplate>
-                    <ContentControl Content="{Binding Content}"/>
-                </DataTemplate>
-            </TabControl.ContentTemplate>
         </TabControl>
+        <ContentControl x:Name="MainContent" Grid.Row="2"/>
     </Grid>
 </Window>

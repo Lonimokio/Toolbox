@@ -7,8 +7,6 @@ C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\bin\Debug\net8.0-windows
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\Toolbox.csproj.AssemblyReference.cache
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\Calculator.baml
-C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\cheatSheets\mdSheet.g.cs
-C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\cheatSheets\WindowsSheet.g.cs
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\Calculator.g.cs
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\ConversionTools.g.cs
@@ -16,8 +14,6 @@ C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\App.g.cs
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\Toolbox_MarkupCompile.cache
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\Toolbox_MarkupCompile.lref
-C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\cheatSheets\mdSheet.baml
-C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\cheatSheets\WindowsSheet.baml
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\ConversionTools.baml
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\PingTester.baml
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\Toolbox.g.resources
@@ -37,3 +33,7 @@ C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\bin\Debug\net8.0-windows
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\bin\Debug\net8.0-windows\Markdown.dll
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\CheatSheets.g.cs
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\CheatSheets.baml
+C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\About.g.cs
+C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\Settings.g.cs
+C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\About.baml
+C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\Settings.baml
