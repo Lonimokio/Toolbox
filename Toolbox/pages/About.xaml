@@ -12,7 +12,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontWeight="Bold" Text="About Toolbox" />
-        <TextBlock Grid.Row="1" HorizontalAlignment="Center" FontSize="18" TextWrapping="Wrap" TextAlignment="Justify" Margin="20">
+        <TextBlock Grid.Row="1" HorizontalAlignment="Center" FontSize="22" TextWrapping="Wrap" TextAlignment="Justify" Margin="20">
             Toolbox is a versatile program that includes a variety of tools to assist you in your daily tasks. It includes math tools such as a calculator and conversion tools, network tools like a Ping test, and a Cheat Sheets page where you can view and edit markdown files. Toolbox utilizes NuGet packages such as Mages, Markdown, and LiveCharts.WPF to provide these functionalities.
         </TextBlock>
     </Grid>

@@ -6,19 +6,66 @@
              xmlns:local="clr-namespace:Toolbox.pages"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+    <Border>
+    <Grid Margin="20">
+        <Grid.Resources>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="Margin" Value="0,0,10,0"/>
+            </Style>
+            <Style TargetType="ComboBox">
+                <Setter Property="Margin" Value="0,0,0,10"/>
+            </Style>
+        </Grid.Resources>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <Button Grid.Column="0" Grid.Row="0" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
-        <Button Grid.Column="1" Grid.Row="0" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
-        <Button Grid.Column="0" Grid.Row="1" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
-        <Button Grid.Column="1" Grid.Row="1" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
 
+        <!-- Default Open Page Setting -->
+        <Label Grid.Column="0" Grid.Row="0" Content="Default Open Page:"/>
+        <ComboBox Grid.Column="1" Grid.Row="0" x:Name="DefaultPageSetting"/>
+
+
+        <!-- Popup Setting -->
+        <Grid Grid.Row="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0"  Content="Enable settings Popups:" />
+            <CheckBox Grid.Column="1" x:Name="SettingsPopup" IsChecked="True"/>
+
+            <Label Grid.Row="1" Grid.Column="0"  Content="Enable Cheatsheet Popups:" />
+            <CheckBox Grid.Row="1" Grid.Column="1" x:Name="CheatSheetsPopup" IsChecked="True"/>
+        </Grid>
+
+        <!-- Theme Setting -->
+        <Label Grid.Column="0" Grid.Row="2" Content="Theme:"/>
+        <ComboBox Grid.Column="1" Grid.Row="2" x:Name="ThemeSetting">
+            <ComboBoxItem Content="Light"/>
+            <ComboBoxItem Content="Dark"/>
+        </ComboBox>
+
+        <!-- Language Setting -->
+        <Label Grid.Column="0" Grid.Row="3" Content="Language:"/>
+        <ComboBox Grid.Column="1" Grid.Row="3" x:Name="LanguageSetting">
+            <ComboBoxItem Content="English"/>
+        </ComboBox>
+        <Button Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" Content="Save" Click="SaveSettings" Margin="0,128,0,-168" />
     </Grid>
+    </Border>
 </UserControl>

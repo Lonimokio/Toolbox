@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\App.xaml
-7-1476472405
+9-1155094180
 
-12565875298
+14-509558785
 202-974786742
-MainWindow.xaml;pages\About.xaml;pages\Calculator.xaml;pages\CheatSheets.xaml;pages\ConversionTools.xaml;pages\PingTester.xaml;pages\Settings.xaml;
+MainWindow.xaml;pages\About.xaml;pages\Calculator.xaml;pages\CheatSheets.xaml;pages\ConversionTools.xaml;pages\PingTester.xaml;pages\Settings.xaml;styling\DarkTheme.xaml;styling\LightTheme.xaml;
 
 True
 

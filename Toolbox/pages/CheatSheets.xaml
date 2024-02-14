@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:Toolbox.pages"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <Border BorderThickness="1" BorderBrush="Black">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -39,4 +40,5 @@
         </Grid>
         <Button Grid.Row="2" Grid.Column="1" Content="Save" Click="SaveButton_Click" Height="40" Margin="10,5,10,5"/>
     </Grid>
+    </Border>
 </UserControl>

@@ -24,10 +24,10 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <TabControl ItemsSource="{Binding MainNavBarTabs}" SelectionChanged="MainNavBarTabs_SelectionChanged">
+            <TabControl ItemsSource="{Binding MainNavBarTabs}" SelectionChanged="MainNavBarTabs_SelectionChanged" x:Name="MainNavBar">
                 <TabControl.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding Name}" Style="{StaticResource TabItemTextBlockStyle}"/>
+                        <TextBlock Text="{Binding Name}"/>
                     </DataTemplate>
                 </TabControl.ItemTemplate>
                 <TabControl.ContentTemplate>

@@ -37,3 +37,6 @@ C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\Settings.g.cs
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\About.baml
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\pages\Settings.baml
+C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\bin\Debug\net8.0-windows\Toolbox.dll.config
+C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\styling\LightTheme.baml
+C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows\styling\DarkTheme.baml
