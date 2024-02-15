@@ -18,17 +18,19 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <TextBlock Text="Cheat Sheets" FontSize="24" FontWeight="Bold" Margin="10"/>
-        <Grid Grid.Row="0" Grid.Column="2">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Button x:Name="EditButton" Grid.Row="2" Grid.Column="0" Content="Edit" Margin="10" Click="EditButton_Click"/>
-            <Button x:Name="ViewButton" Grid.Row="2" Grid.Column="1" Content="View" Margin="10" Click="ViewButton_Click"/>
-        </Grid>
-        <ListBox x:Name="CheatSheetsNav" Grid.Row="1" Grid.Column="0" ItemsSource="{Binding MarkdownFiles}" SelectedItem="{Binding SelectedFile}" DisplayMemberPath="Name" Margin="10" SelectionChanged="CheatSheetsNav_SelectionChanged"/>
-        <WebBrowser Grid.Row="1" Grid.Column="1" Margin="10" x:Name="webBrowser"/>
-        <TextBox Grid.Row="1" Grid.Column="1" Margin="10" x:Name="editTextBox" Visibility="Collapsed"/>
+            <Grid Grid.Row="0" Grid.Column="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="EditButton" Grid.Row="2" Grid.Column="0" Content="Edit" Margin="10" Click="EditButton_Click"/>
+                <Button x:Name="ViewButton" Grid.Row="2" Grid.Column="1" Content="View" Margin="10" Click="ViewButton_Click"/>
+            </Grid>
+            <ListBox Grid.Row="1" Grid.Column="0" Margin="10" x:Name="CheatSheetsNav"  ItemsSource="{Binding MarkdownFiles}" SelectedItem="{Binding SelectedFile}" DisplayMemberPath="Name"  SelectionChanged="CheatSheetsNav_SelectionChanged"/>
+                <Border Grid.Row="1" Grid.Column="1" Margin="10">
+            <WebBrowser x:Name="webBrowser"/>
+            </Border>
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="10" x:Name="editTextBox" Visibility="Collapsed"/>
 
         <Grid Grid.Row="2" Grid.Column="0">
             <Grid.ColumnDefinitions>
