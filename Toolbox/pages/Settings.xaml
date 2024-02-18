@@ -31,10 +31,16 @@
 
         <!-- Default Open Page Setting -->
         <Label Grid.Column="0" Grid.Row="0" Content="Default Open Page:"/>
-        <ComboBox Grid.Column="1" Grid.Row="0" x:Name="DefaultPageSetting"/>
-
-
-        <!-- Popup Setting -->
+            <ComboBox Grid.Column="1" Grid.Row="0" x:Name="DefaultPageSetting"
+                      ItemsSource="{Binding DefaultPageSettingData}"
+                SelectedIndex="{Binding SelectedDefaultPageIndex, Mode=TwoWay}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{Binding ComboboxText}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <!-- Popup Setting -->
         <Grid Grid.Row="1" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -55,16 +61,26 @@
 
         <!-- Theme Setting -->
         <Label Grid.Column="0" Grid.Row="2" Content="Theme:"/>
-        <ComboBox Grid.Column="1" Grid.Row="2" x:Name="ThemeSetting">
-            <ComboBoxItem Content="Light"/>
-            <ComboBoxItem Content="Dark"/>
-        </ComboBox>
+            <ComboBox Grid.Column="1" Grid.Row="2" x:Name="ThemeSetting"
+                  ItemsSource="{Binding ThemeSettingData}"
+                SelectedIndex="{Binding SelectedThemeIndex, Mode=TwoWay}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{Binding ComboboxText}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
 
         <!-- Language Setting -->
         <Label Grid.Column="0" Grid.Row="3" Content="Language:"/>
-        <ComboBox Grid.Column="1" Grid.Row="3" x:Name="LanguageSetting">
-            <ComboBoxItem Content="English"/>
-        </ComboBox>
+            <ComboBox Grid.Column="1" Grid.Row="3" x:Name="LanguageSetting"
+                  ItemsSource="{Binding LanguageSettingData}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{Binding ComboboxText}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
         <Button Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" Content="Save" Click="SaveSettings" Margin="0,128,0,-168" />
     </Grid>
     </Border>

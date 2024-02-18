@@ -49,7 +49,7 @@ namespace Toolbox.Config {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int TabMainIndex {
             get {
                 return ((int)(this["TabMainIndex"]));
@@ -85,7 +85,7 @@ namespace Toolbox.Config {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool IsDarkTheme {
             get {
                 return ((bool)(this["IsDarkTheme"]));

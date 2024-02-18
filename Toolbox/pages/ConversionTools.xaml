@@ -27,12 +27,12 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <TextBlock Text="Category" FontSize="18" FontWeight="Bold" Margin="10" HorizontalAlignment="Center"/>
-                <ComboBox Grid.Column="1" HorizontalAlignment="Center" Height="20" Margin="10,40,10,10" VerticalAlignment="Top" Width="120"
+                <ComboBox Grid.Column="1" HorizontalAlignment="Center" Margin="10,40,10,10" VerticalAlignment="Top" Width="120"
                           ItemsSource="{Binding Categories}"
                           SelectedItem="{Binding SelectedCategory}">
                     <ComboBox.ItemTemplate>
                         <DataTemplate>
-                            <TextBlock Text="{Binding}"/>
+                            <TextBlock Text="{Binding}" Style="{Binding ComboboxText}"/>
                         </DataTemplate>
                     </ComboBox.ItemTemplate>
                 </ComboBox>
@@ -65,7 +65,7 @@
                               SelectedItem="{Binding SelectedInputUnit}" Width="130">
                         <ComboBox.ItemTemplate>
                             <DataTemplate>
-                                <TextBlock Text="{Binding}"/>
+                                <TextBlock Text="{Binding}" Style="{Binding ComboboxText}"/>
                             </DataTemplate>
                         </ComboBox.ItemTemplate>
                     </ComboBox>
@@ -87,7 +87,7 @@
                               SelectedItem="{Binding SelectedOutputUnit}" Width="130">
                         <ComboBox.ItemTemplate>
                             <DataTemplate>
-                                <TextBlock Text="{Binding}"/>
+                                <TextBlock Text="{Binding}" Style="{Binding ComboboxText}"/>
                             </DataTemplate>
                         </ComboBox.ItemTemplate>
                     </ComboBox>

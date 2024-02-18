@@ -18,7 +18,7 @@
             <RowDefinition Height="32"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <StackPanel Background="Black" Grid.ColumnSpan="2" Grid.RowSpan="3"></StackPanel>
+        <StackPanel Style="{StaticResource BackgroundPanel}" Grid.ColumnSpan="2" Grid.RowSpan="3"></StackPanel>
         <!--MainNavBar and ExtraNavBar elements-->
         <Grid>
             <Grid.ColumnDefinitions>

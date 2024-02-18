@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Toolbox.pages"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Border BorderThickness="1" BorderBrush="Black">
+    <Border>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>

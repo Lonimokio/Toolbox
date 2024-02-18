@@ -3,20 +3,22 @@
                     xmlns:local="clr-namespace:YourNamespace">
 
     <!-- Theme colors -->
-    <Color x:Key="BackgroundColor">#F5F5F5</Color>
-    <Color x:Key="ForegroundColor">#333333</Color>
-    <Color x:Key="AccentColor">#6f9E7E</Color>
-    <Color x:Key="AccentColor2">#FAF9F6</Color>
-    <Color x:Key="AccentColor3">#FF90EE90</Color>
+    <Color x:Key="BackgroundColor">#FFFFFF</Color>
+    <Color x:Key="ForegroundColor">#000000</Color>
+    <Color x:Key="ForegroundColor2">#FFFFFF</Color>
+    <Color x:Key="AccentColor">#f0f1f1</Color>
+    <Color x:Key="AccentColor2">#CCCCCC</Color>
+    <Color x:Key="AccentColor3">#4CAF50</Color>
     <Color x:Key="AccentColor4">#FFFFFF</Color>
     <Color x:Key="Black">#000000</Color>
     <Color x:Key="White">#FFFFFF</Color>
-    <Color x:Key="Transparant">#00000000</Color>
+    <Color x:Key="Transparent">#00000000</Color>
 
 
     <!-- Theme brushes -->
     <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource BackgroundColor}"/>
     <SolidColorBrush x:Key="ForegroundBrush" Color="{StaticResource ForegroundColor}"/>
+    <SolidColorBrush x:Key="ForegroundBrush2" Color="{StaticResource ForegroundColor2}"/>
     <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource AccentColor}"/>
     <SolidColorBrush x:Key="AccentBrush2" Color="{StaticResource AccentColor2}"/>
     <SolidColorBrush x:Key="AccentBrush3" Color="{StaticResource AccentColor3}"/>
@@ -30,33 +32,57 @@
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
         <Setter Property="BorderBrush" Value="{StaticResource BlackBrush}"/>
         <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="Padding" Value="5"/>
         <Setter Property="Margin" Value="1"/>
-        <Style.Triggers>
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="{StaticResource AccentBrush3}"/>
-            </Trigger>
-        </Style.Triggers>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        Padding="{TemplateBinding Padding}">
+                        <ContentPresenter HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource AccentBrush3}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
     </Style>
 
     <Style TargetType="Border">
         <Setter Property="Background" Value="{StaticResource AccentBrush2}"/>
         <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="BorderBrush" Value="{StaticResource BlackBrush}"/>
-        <Setter Property="CornerRadius" Value="5"/>
+        <Setter Property="BorderBrush" Value="{StaticResource ForegroundBrush2}"/>
+        <Setter Property="CornerRadius" Value="2.5"/>
     </Style>
 
     <Style TargetType="TextBlock">
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
     </Style>
 
+    <Style TargetType="TextBlock" x:Key="ComboboxText"
+           BasedOn="{StaticResource {x:Type TextBlock}}">
+        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush2}"/>
+    </Style>
+
     <Style TargetType="Border"
            x:Key="ColorBox"
               BasedOn="{StaticResource {x:Type Border}}">
-        <Setter Property="Background" Value="{StaticResource BackgroundBrush}"/>
-        <Setter Property="BorderBrush" Value="{StaticResource BlackBrush}"/>
-        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Background" Value="{StaticResource AccentBrush4}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource ForegroundBrush2}"/>
+        <Setter Property="BorderThickness" Value="2"/>
         <Setter Property="CornerRadius" Value="5"/>
+    </Style>
+
+    <Style TargetType="StackPanel" x:Key="BackgroundPanel">
+        <Setter Property="Background" Value="{StaticResource ForegroundBrush2}"/>
     </Style>
 
 
@@ -65,15 +91,10 @@
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
     </Style>
 
-    <Style TargetType="ComboBoxItem">
-        <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
-        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
-    </Style>
-
     <Style TargetType="ComboBox">
         <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
-        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
-        <Setter Property="BorderBrush" Value="{StaticResource BlackBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush2}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource ForegroundBrush2}"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="Padding" Value="5"/>
     </Style>
@@ -81,7 +102,8 @@
     <Style TargetType="ListBox">
         <Setter Property="Background" Value="{StaticResource BackgroundBrush}"/>
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
-        <Setter Property="BorderBrush" Value="{StaticResource BlackBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource ForegroundBrush2}"/>
+        <Setter Property="BorderThickness" Value="2"/>
     </Style>
 
     <Style TargetType="Grid">
@@ -106,12 +128,11 @@
     <Style TargetType="TabItem">
         <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
-        <Setter Property="BorderBrush" Value="{StaticResource BlackBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource ForegroundBrush2}"/>
         <Setter Property="Padding" Value="10"/>
         <Setter Property="MinHeight" Value="30"/>
         <Setter Property="Height" Value="30"/>
         <Setter Property="FontWeight" Value="Bold"/>
-        
         <Setter Property="MinWidth" Value="100"/>
         <Setter Property="Template">
             <Setter.Value>
@@ -147,7 +168,7 @@
     </Style>
 
     <Style TargetType="CheckBox">
-        <Setter Property="Background" Value="{StaticResource AccentBrush4}"/>
+        <Setter Property="Background" Value="{StaticResource WhiteBrush}"/>
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
     </Style>
 

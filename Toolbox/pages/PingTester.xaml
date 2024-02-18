@@ -25,7 +25,7 @@
                 <Button Grid.Row="2" x:Name="btnPing" Content="Ping" Width="100" Margin="55,5,55,-5" Click="btnPing_Click"/>
             </Grid>
 
-            <Border x:Name="ColorBox" Margin="100,79,100,0" Grid.RowSpan="2">
+            <Border Style="{StaticResource ColorBox}" Margin="100,79,100,0" Grid.RowSpan="2">
                 <lvc:CartesianChart Series="{Binding PingSeriesCollection}" Height="auto" Width="auto" >
                     <lvc:CartesianChart.AxisX>
                         <lvc:Axis Title="Time (s)" MinValue="0" MaxValue="30" FontSize="14" Foreground="Black"/>
