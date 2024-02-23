@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\App.xaml
-9-1155094180
+121413177359
 1-1849170628
-14-954385378
-202-974786742
-MainWindow.xaml;pages\About.xaml;pages\Calculator.xaml;pages\CheatSheets.xaml;pages\ConversionTools.xaml;pages\PingTester.xaml;pages\Settings.xaml;styling\DarkTheme.xaml;styling\LightTheme.xaml;
+17-1739651662
+203-1434839706
+MainWindow.xaml;pages\About.xaml;pages\FileTools\CheatSheets.xaml;pages\FileTools\Checksum.xaml;pages\MathTools\Calculator.xaml;pages\MathTools\ConversionTools.xaml;pages\MathTools\RandomNumberGenerator.xaml;pages\NetworkTools\PingTester.xaml;pages\Settings.xaml;pages\System\SystemInformation.xaml;styling\DarkTheme.xaml;styling\LightTheme.xaml;
 
 False
 

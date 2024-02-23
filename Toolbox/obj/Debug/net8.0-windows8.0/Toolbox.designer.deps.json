@@ -48,6 +48,14 @@
       },
       "Microsoft.NETCore.Platforms/1.0.1": {},
       "Microsoft.NETCore.Targets/1.0.1": {},
+      "OpenHardwareMonitor/0.9.6": {
+        "runtime": {
+          "lib/net45/OpenHardwareMonitorLib.dll": {
+            "assemblyVersion": "0.9.6.0",
+            "fileVersion": "0.9.6.0"
+          }
+        }
+      },
       "System.Collections/4.0.11": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -195,6 +203,13 @@
       "sha512": "sha512-rkn+fKobF/cbWfnnfBOQHKVKIOpxMZBvlSHkqDWgBpwGDcLRduvs3D9OLGeV6GWGvVwNlVi2CBbTjuPmtHvyNw==",
       "path": "microsoft.netcore.targets/1.0.1",
       "hashPath": "microsoft.netcore.targets.1.0.1.nupkg.sha512"
+    },
+    "OpenHardwareMonitor/0.9.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vbx870Mi1nzz99VYx4yF0uaH2a8jtQ94Y+vT+0pRZz3alvCzaiJlbre7ArV8oP2YDNO1oVuvYxKZSoWSFUFj3Q==",
+      "path": "openhardwaremonitor/0.9.6",
+      "hashPath": "openhardwaremonitor.0.9.6.nupkg.sha512"
     },
     "System.Collections/4.0.11": {
       "type": "package",

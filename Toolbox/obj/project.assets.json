@@ -76,6 +76,15 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "OpenHardwareMonitor/0.9.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/OpenHardwareMonitorLib.dll": {}
+        },
+        "runtime": {
+          "lib/net45/OpenHardwareMonitorLib.dll": {}
+        }
+      },
       "System.Collections/4.0.11": {
         "type": "package",
         "dependencies": {
@@ -340,6 +349,19 @@
         "microsoft.netcore.targets.1.0.1.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
+      ]
+    },
+    "OpenHardwareMonitor/0.9.6": {
+      "sha512": "vbx870Mi1nzz99VYx4yF0uaH2a8jtQ94Y+vT+0pRZz3alvCzaiJlbre7ArV8oP2YDNO1oVuvYxKZSoWSFUFj3Q==",
+      "type": "package",
+      "path": "openhardwaremonitor/0.9.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "OpenHardwareMonitor.png",
+        "lib/net45/OpenHardwareMonitorLib.dll",
+        "openhardwaremonitor.0.9.6.nupkg.sha512",
+        "openhardwaremonitor.nuspec"
       ]
     },
     "System.Collections/4.0.11": {
@@ -1210,7 +1232,8 @@
     "net8.0-windows8.0": [
       "LiveCharts.Wpf >= 0.9.7",
       "Mages >= 2.0.2",
-      "Markdown >= 2.2.1"
+      "Markdown >= 2.2.1",
+      "OpenHardwareMonitor >= 0.9.6"
     ]
   },
   "packageFolders": {
@@ -1263,6 +1286,10 @@
           "Markdown": {
             "target": "Package",
             "version": "[2.2.1, )"
+          },
+          "OpenHardwareMonitor": {
+            "target": "Package",
+            "version": "[0.9.6, )"
           }
         },
         "imports": [
@@ -1305,6 +1332,16 @@
       "warningLevel": 1,
       "message": "Package 'LiveCharts.Wpf 0.9.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows8.0'. This package may not be fully compatible with your project.",
       "libraryId": "LiveCharts.Wpf",
+      "targetGraphs": [
+        "net8.0-windows8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'OpenHardwareMonitor 0.9.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "OpenHardwareMonitor",
       "targetGraphs": [
         "net8.0-windows8.0"
       ]
