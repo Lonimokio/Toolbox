@@ -40,7 +40,6 @@ C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows8.0\Toolbox.AssemblyInfo.cs
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows8.0\Toolbox.csproj.CoreCompileInputs.cache
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows8.0\Toolbox.sourcelink.json
-C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows8.0\Toolbox.csproj.CopyComplete
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows8.0\Toolbox.dll
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows8.0\refint\Toolbox.dll
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows8.0\Toolbox.pdb
@@ -48,3 +47,7 @@ C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows8.0\ref\Toolbox.dll
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows8.0\pages\System\SystemInformation.g.cs
 C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows8.0\pages\System\SystemInformation.baml
+C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\bin\Debug\net8.0-windows8.0\System.CodeDom.dll
+C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\bin\Debug\net8.0-windows8.0\System.Management.dll
+C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\bin\Debug\net8.0-windows8.0\runtimes\win\lib\net8.0\System.Management.dll
+C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\obj\Debug\net8.0-windows8.0\Toolbox.csproj.Up2Date

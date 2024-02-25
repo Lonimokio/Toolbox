@@ -108,6 +108,7 @@
     <Style TargetType="Grid">
         <Setter Property="Background" Value="Transparent"/>
     </Style>
+    
 
     <!-- TabControl Style -->
     <Style TargetType="TabControl">

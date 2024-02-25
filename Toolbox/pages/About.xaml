@@ -12,11 +12,34 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" FontWeight="Bold" Text="Welcome to Toolbox" Margin="0,20,0,10"/>
-            <Border Style="{StaticResource ColorBox}" Margin="20" Grid.Row="1">
-                <TextBlock HorizontalAlignment="Center" FontSize="18" TextWrapping="Wrap" TextAlignment="Justify" Margin="20" >
-                    Toolbox is your all-in-one solution for daily tasks. From math calculations to network diagnostics, it's got you covered. With features like a calculator, conversion tools, Ping test, and even a Cheat Sheets page for your markdown files, Toolbox makes your life easier. Built using NuGet packages like Mages, Markdown, and LiveCharts.WPF, it's as reliable as it is powerful.
-                </TextBlock>
+            <TextBlock Text="V.1.0.0" HorizontalAlignment="Left" Margin="10,10,0,10" FontSize="15"></TextBlock>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" Text="Welcome to Toolbox" Margin="0,20,0,0"/>
+            <Border Style="{StaticResource ColorBox}" Margin="20,20,20,20" Grid.Row="1" Grid.RowSpan="2">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock HorizontalAlignment="Center" FontSize="18" TextWrapping="Wrap" TextAlignment="Justify" Margin="20" >
+                    Toolbox is a collection of tools and utilities to help you with your daily tasks. Does´t matter pro or not most likely you will find something useful. It is a work in progress and new tools will be added as they are developed.
+                    </TextBlock>
+                    <TextBlock Grid.Row="1" HorizontalAlignment="Center" FontSize="18" TextWrapping="Wrap" TextAlignment="Justify" Margin="0,10,0,10" Width="688">
+                        Features include: 
+                        <LineBreak/>
+                        Mathtools (Calculator, Conversion tools and Random Number generator)
+                        <LineBreak/>
+                        Network tools (Ping) 
+                        <LineBreak/>
+                        File tools (Cheatsheets and checksums)
+                        <LineBreak/>
+                        System (System information)
+                    </TextBlock>
+                    <StackPanel Grid.Row="2" Height="50" Width="100" HorizontalAlignment="Left" Margin="20">
+                        <TextBlock>Used Packages:</TextBlock>
+                        <Button Width="50" HorizontalAlignment="Left" Margin="0 5 0 0" Click="NuGet_Click">NuGet</Button>
+                    </StackPanel>
+                </Grid>
             </Border>
         </Grid>
     </Border>
