@@ -6,15 +6,17 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>Toolbox-2.ico</ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Toolbox-2.ico" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="LibreHardwareMonitorLib" Version="0.9.3" />
     <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
     <PackageReference Include="Mages" Version="2.0.2" />
     <PackageReference Include="Markdown" Version="2.2.1" />
-    <PackageReference Include="OpenHardwareMonitor" Version="0.9.6" />
     <PackageReference Include="System.Management" Version="9.0.0-preview.1.24080.9" />
   </ItemGroup>
   <ItemGroup>
