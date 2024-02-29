@@ -16,5 +16,5 @@ C:\Programming\School\Ohjelmistokehitys\Project\Toolbox\App.xaml
 207993171232
 MainWindow.xaml;pages\About.xaml;pages\FileTools\CheatSheets.xaml;pages\FileTools\Checksum.xaml;pages\MathTools\Calculator.xaml;pages\MathTools\ConversionTools.xaml;pages\MathTools\RandomNumberGenerator.xaml;pages\NetworkTools\PingTester.xaml;pages\Settings.xaml;pages\System\SystemInformation.xaml;styling\DarkTheme.xaml;styling\LightTheme.xaml;
 
-True
+False
 
