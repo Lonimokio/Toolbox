@@ -85,7 +85,7 @@ namespace Toolbox.pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Toolbox;V1.0.0.0;component/pages/networktools/pingtester.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Toolbox;component/pages/networktools/pingtester.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\pages\NetworkTools\PingTester.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

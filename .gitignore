@@ -20,7 +20,5 @@
 
 # Ignore unnecessary WPF files
 *.vshost.*
-*.xaml.*
-*.xaml.cs
 *.xaml.g.cs
 *.xaml.g.i.cs

@@ -124,7 +124,7 @@ namespace Toolbox.pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Toolbox;V1.0.0.0;component/pages/mathtools/calculator.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Toolbox;component/pages/mathtools/calculator.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\pages\MathTools\Calculator.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
