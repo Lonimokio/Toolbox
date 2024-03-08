@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
 using Toolbox.Config;
+using static Toolbox.MainWindow;
 
 namespace Toolbox.pages
 {
@@ -17,22 +18,11 @@ namespace Toolbox.pages
         public int SelectedDefaultPageIndex { get; set; }
         public int SelectedThemeIndex { get; set; }
 
-        // Define a dictionary to store the sub tab, main tab, and their corresponding index numbers
-        private Dictionary<string, (string subTab, int subTabIndex, string mainTab, int mainTabIndex, int mainIndex)> pageSettings = new Dictionary<string, (string, int, string, int, int)>()
-        {
-            { "CheatSheets", ("CheatSheets", 0, "FileTools", 0, 0) },
-            { "Checksum", ("Checksum", 1, "FileTools", 0, 1) },
-            { "Calculator", ("Calculator", 0, "MathTools", 1, 2) },
-            { "Conversion", ("Conversion", 1, "MathTools", 1, 3) },
-            { "Ping tester", ("Ping tester", 0, "NetworkTools", 2, 4) },
-            { "System Info", ("System Info", 0, "System", 3, 5) }
-        };
-
         public Settings()
         {
             InitializeComponent();
 
-            DefaultPageSettingData = new ObservableCollection<string>(pageSettings.Keys);
+            // Set the data context to this instance for data binding
             ThemeSettingData = new ObservableCollection<string> { "Light", "Dark" };
 
             SelectedDefaultPageIndex = AppSettings.Default.TabMainIndex;
@@ -42,6 +32,15 @@ namespace Toolbox.pages
             CheatSheetsPopup.IsChecked = AppSettings.Default.CheatSheetsPopup;
 
             DataContext = this; // Set DataContext to this instance for data binding
+            Loaded += Settings_Loaded;
+        }
+
+        private void Settings_Loaded(object sender, RoutedEventArgs e)
+        {
+            DefaultPageSettingData = new ObservableCollection<string>(PageSettings.pageSettings.Keys);
+            DefaultPageSetting.ItemsSource = DefaultPageSettingData;
+            DefaultPageSetting.SelectedIndex = SelectedDefaultPageIndex;
+            ThemeSetting.SelectedIndex = SelectedThemeIndex;
         }
 
         private void DefaultPageSettings()
@@ -50,7 +49,7 @@ namespace Toolbox.pages
             string selectedEntry = DefaultPageSetting.SelectedItem.ToString();
 
             // Retrieve the corresponding main and sub tab values from the dictionary
-            var (subTab, subTabIndex, mainTab, mainTabIndex, mainIndex) = pageSettings[selectedEntry];
+            var (subTab, subTabIndex, mainTab, mainTabIndex, mainIndex) = PageSettings.pageSettings[selectedEntry];
 
             // Update the settings with the retrieved values
             AppSettings.Default.DefaultMainTab = mainTabIndex;

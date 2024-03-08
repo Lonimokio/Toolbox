@@ -44,8 +44,17 @@ namespace Toolbox
 
             LoadMainNavBarTabs();
             LoadExtraNavBarTabs();
+            GeneratePageSettings();
 
             DataContext = this;
+            Loaded += MainWindow_Loaded;
+        }
+
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            // Set the default tab
+            MainNavBar.SelectedIndex = AppSettings.Default.DefaultMainTab;
+            SubNavBar.SelectedIndex = AppSettings.Default.DefaultSubTab;
         }
 
         private void LoadMainNavBarTabs()
@@ -61,8 +70,6 @@ namespace Toolbox
                     MainNavBarTabs.Add(new Tab() { Name = tabName });
                 }
             }
-            // Set the default tab
-            MainNavBar.SelectedIndex = AppSettings.Default.DefaultMainTab;
         }
 
         private void LoadSubNavBarTabs(string mainTabName)
@@ -129,6 +136,35 @@ namespace Toolbox
                 MainContent.Content = selectedTab.Content;
             }
         }
+
+        public static class PageSettings
+        {
+            public static Dictionary<string, (string subTab, int subTabIndex, string mainTab, int mainTabIndex, int mainIndex)> pageSettings = new Dictionary<string, (string, int, string, int, int)>();
+        }
+
+        private void GeneratePageSettings()
+        {
+            PageSettings.pageSettings.Clear(); // Clear existing settings
+            int mainIndex = 0;
+            int mainTabIndex = 0;
+            foreach (var mainTab in MainNavBarTabs)
+            {
+                LoadSubNavBarTabs(mainTab.Name);
+
+                int subTabIndex = 0;
+                foreach (var subTab in SubNavBarTabs)
+                {
+                    // Associate sub tab with the current main tab and generate settings
+                    PageSettings.pageSettings[subTab.Name] = (subTab.Name, subTabIndex, mainTab.Name, mainTabIndex, mainIndex);
+                    subTabIndex++;
+                    mainIndex++;
+                }
+
+                mainTabIndex++;
+            }
+        }
+
+
     }
 
 }
