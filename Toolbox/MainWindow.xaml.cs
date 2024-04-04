@@ -38,7 +38,16 @@ namespace Toolbox
         public MainWindow()
         {
             pagesDirectory = System.AppDomain.CurrentDomain.BaseDirectory;
-            pagesDirectory = pagesDirectory.Substring(0, pagesDirectory.IndexOf("Toolbox")) + "Toolbox\\pages";
+            int index = pagesDirectory.LastIndexOf("Toolbox");
+            if (index != -1) // Check if "Toolbox" was found
+            {
+                pagesDirectory = pagesDirectory.Substring(0, index) + "Toolbox\\pages";
+            }
+            else
+            {
+                MessageBox.Show("Error: Could not find the 'Toolbox' directory");
+                Environment.Exit(1);
+            }
 
             InitializeComponent();
 
