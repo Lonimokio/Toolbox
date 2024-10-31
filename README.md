@@ -1,9 +1,28 @@
 # Toolbox
 
-Toolbox is a collection of tools and utilities to help you with your daily tasks. Doesn't matter pro or not, most likely you will find something useful. It is a work in progress and new tools will be added as they are developed.
+**Toolbox** is a collection of essential tools and utilities designed to simplify your daily tasks on Windows. Whether you're a pro or just getting started, Toolbox has something for you! This project is a continuous work in progress, with new tools added regularly.
 
-Features include: 
-- Mathtools (Calculator, Conversion tools and Random Number Generator)
-- Network tools (Ping) 
-- File tools (Cheatsheets and checksums)
-- System (System information)
+### Features
+
+- **Math Tools**  
+  Handy calculations and conversions at your fingertips:
+  - Calculator
+  - Unit Conversion Tools
+  - Random Number Generator
+
+- **Network Tools**  
+  Quick and efficient utilities to manage network diagnostics:
+  - Ping
+
+- **File Tools**  
+  Streamline file management and checks:
+  - Cheatsheets
+  - Checksums
+
+- **System Tools**  
+  Easy access to essential system information:
+  - System Overview and Specifications
+
+---
+
+New features are on their way—stay tuned!
